@@ -3,7 +3,10 @@ import math
 import numpy as np
 import plotly.graph_objects as go
 
-from laytec_epitt_plugin.schema import LayTecEpiTTMeasurement
+try:
+    from laytec_epitt_plugin.schema import LayTecEpiTTMeasurement
+except ImportError:
+    from nomad.datamodel.data import EntryData as LayTecEpiTTMeasurement
 from nomad.config import config
 from nomad.datamodel.data import ArchiveSection, EntryData
 from nomad.datamodel.metainfo.annotations import (
