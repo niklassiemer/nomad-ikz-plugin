@@ -24,8 +24,6 @@ movpesubstrateapp = AppEntryPoint(
                 'data.crystal_properties.orientation#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.crystal_properties.miscut.angle#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.crystal_properties.miscut.orientation#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
-                'data.geometry.length#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
-                'data.geometry.width#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.electronic_properties.conductivity_type#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.description#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
             ],
@@ -48,12 +46,6 @@ movpesubstrateapp = AppEntryPoint(
                 'data.re_etching#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(),
                 'data.re_annealing#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(),
                 'data.epi_ready#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(),
-                'data.geometry.length#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(
-                    label='Length', unit='mm'
-                ),
-                'data.geometry.width#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(
-                    label='Width', unit='mm'
-                ),
                 'data.dopants.elements#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(),
                 'data.dopants.doping_level#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(),
                 'data.crystal_properties.orientation#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(),

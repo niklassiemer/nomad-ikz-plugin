@@ -3,7 +3,6 @@ import math
 import numpy as np
 import plotly.graph_objects as go
 
-from laytec_epitt_plugin.schema import LayTecEpiTTMeasurement
 from nomad.config import config
 from nomad.datamodel.data import ArchiveSection, EntryData
 from nomad.datamodel.metainfo.annotations import (
@@ -33,6 +32,7 @@ from nomad.metainfo import (
     Reference,
     SchemaPackage,
     Section,
+    SectionProxy,
     SubSection,
 )
 from nomad.parsing.tabular import TableData
@@ -542,7 +542,7 @@ class InSituMonitoringReference(SectionReference):
     """
 
     reference = Quantity(
-        type=LayTecEpiTTMeasurement,
+        type=Reference(SectionProxy('laytec_epitt_plugin.schema.LayTecEpiTTMeasurement')),
         description='A reference to a NOMAD `InSituMonitoring` entry.',
         a_eln=ELNAnnotation(
             component='ReferenceEditQuantity',

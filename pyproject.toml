@@ -32,7 +32,6 @@ dependencies = [
     'nomad-material-processing',
     'nomad-measurements',
     'nomad-analysis',
-    'laytec_epitt_plugin',
     'brukeropus',
     ]
 
@@ -42,6 +41,9 @@ dev = [
     "ruff",
     "structlog",
     "python-logstash>=0.4.6",
+]
+laytec = [
+    'laytec_epitt_plugin',
 ]
 
 [project.urls]
