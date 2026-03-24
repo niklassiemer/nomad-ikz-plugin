@@ -3,7 +3,6 @@ import math
 import numpy as np
 import plotly.graph_objects as go
 
-# from lakeshore_nomad_plugin.hall.schema import HallMeasurement
 from laytec_epitt_plugin.schema import LayTecEpiTTMeasurement
 from nomad.config import config
 from nomad.datamodel.data import ArchiveSection, EntryData

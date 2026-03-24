@@ -27,7 +27,6 @@ movpesubstrateapp = AppEntryPoint(
                 'data.geometry.length#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.geometry.width#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.electronic_properties.conductivity_type#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
-                'data.tags#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
                 'data.description#nomad_ikz_plugin.movpe.schema.SubstrateMovpe',
             ],
             options={
@@ -40,9 +39,6 @@ movpesubstrateapp = AppEntryPoint(
                 ),
                 'data.lab_id#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(
                     label='Substrate ID'
-                ),
-                'data.tags#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(
-                    label='Substrate Box'
                 ),
                 'data.description#nomad_ikz_plugin.movpe.schema.SubstrateMovpe': Column(
                     label='Comment'
