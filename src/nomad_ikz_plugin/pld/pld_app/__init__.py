@@ -11,7 +11,7 @@ pld_layers_app = AppEntryPoint(
           include:
             - '*#nomad_ikz_plugin.pld.schema.*'
         # Path used in the URL, must be unique
-        path: 'nomad_ikz_plugin/pld'
+        path: 'nomad_ikz_plugin_pld'
         # Used to categorize apps in the explore menu
         category: 'Experiment'
         # Brief description used in the app menu
