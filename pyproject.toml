@@ -28,11 +28,10 @@ authors = [
 ]
 license = { file = "LICENSE" }
 dependencies = [
-    'nomad-lab>=1.3.14',
+    'nomad-lab>=1.4.1',
     'nomad-material-processing',
     'nomad-measurements',
-    'nomad-analysis', # develop branch
-    'lakeshore-nomad-plugin',
+    'nomad-analysis',
     'laytec_epitt_plugin',
     'brukeropus',
     ]
@@ -53,7 +52,6 @@ dev = [
 index-url = "https://gitlab.mpcdf.mpg.de/api/v4/projects/2187/packages/pypi/simple"
 
 [tool.uv.sources]
-lakeshore-nomad-plugin = { git = "https://github.com/IKZ-Berlin/lakeshore-nomad-plugin.git", branch = "main" }
 laytec_epitt_plugin = { git = "https://github.com/IKZ-Berlin/laytec_epitt_nomad_plugin.git", branch = "main" }
 
 [tool.ruff]
